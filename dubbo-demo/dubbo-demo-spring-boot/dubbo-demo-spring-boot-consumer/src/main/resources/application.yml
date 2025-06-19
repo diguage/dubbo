@@ -26,11 +26,11 @@ dubbo:
     name: dubbo
     port: -1
   registry:
-    id: zk-registry
-    address: zookeeper://127.0.0.1:2181
+    address: nacos://localhost:8848
+    register-mode: all
   config-center:
-    address: zookeeper://127.0.0.1:2181
+    address: nacos://localhost:8848
   metadata-report:
-    address: zookeeper://127.0.0.1:2181
+    address: nacos://localhost:8848
 
 

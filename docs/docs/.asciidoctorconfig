@@ -1,0 +1,24 @@
+// this adds attributes to every preview being rendered in IntelliJ
+// for more information see:
+// https://intellij-asciidoc-plugin.ahus1.de/docs/users-guide/features/advanced/asciidoctorconfig-file.html
+
+:pdf-fontsdir: {asciidoctorconfigdir}/../cfg/fonts
+:pdf-stylesdir: {asciidoctorconfigdir}/../cfg/theme
+:pdf-theme: Source
+
+:icons: font
+
+:image_attr: align="center",width=95%
+:diagram_attr: format=svg,align="center",width=95%
+
+:source_attr: linenums,indent=0,subs="attributes,verbatim"
+:java_src_attr: source%nowrap,java,{source_attr}
+
+:root_basedir: {asciidoctorconfigdir}/../..
+:project_basedir: {asciidoctorconfigdir}/..
+:sourcedir: {asciidoctorconfigdir}/../src/main/java/com/diguage/truman
+:rpc-api-srcdir: {asciidoctorconfigdir}/../../dubbo-rpc/dubbo-rpc-api/src/main/java/org/apache/dubbo/rpc
+:common-srcdir: {asciidoctorconfigdir}/../../dubbo-common/src/main/java/org/apache/dubbo/common
+:kroki-plantuml-include-paths: ./assets/diagrams
+:diagram_dir: ./assets/diagrams
+

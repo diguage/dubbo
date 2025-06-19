@@ -1,0 +1,10 @@
+seqdiag {
+  edge_length = 200;  // default value is 192
+  default_fontsize = 14;  // default value is 11
+
+  browser  -> webserver [label = "GET /seqdiag/svg/base64", note = "\n测试\n_"];
+  webserver  => processor [label = "Convert text to image", leftnote = "\n测试\n_"];
+  browser <-- webserver;
+
+=== D瓜哥 · https://www.diguage.com · 出品 ===
+}

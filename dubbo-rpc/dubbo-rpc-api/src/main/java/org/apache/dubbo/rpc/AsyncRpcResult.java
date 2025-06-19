@@ -184,6 +184,7 @@ public class AsyncRpcResult implements Result {
         return createDefaultValue(invocation);
     }
 
+    // tag::get[]
     /**
      * This method will always return after a maximum 'timeout' waiting:
      * 1. if value returns before timeout, return normally.
@@ -208,6 +209,9 @@ public class AsyncRpcResult implements Result {
         return responseFuture.get();
     }
 
+    /**
+     * 在这里，将异步网络调用转换成同步调用。
+     */
     @Override
     public Result get(long timeout, TimeUnit unit) throws InterruptedException, ExecutionException, TimeoutException {
         long deadline = System.nanoTime() + unit.toNanos(timeout);
@@ -233,6 +237,7 @@ public class AsyncRpcResult implements Result {
         }
         return responseFuture.get(restTime, TimeUnit.NANOSECONDS);
     }
+    // end::get[]
 
     @Override
     public Object recreate() throws Throwable {

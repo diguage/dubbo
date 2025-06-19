@@ -1,0 +1,21 @@
+:doctype: book
+:icons: font
+:source-highlighter: rouge
+:source-language: java
+:rouge-style: github
+:linkcss:
+// :toc: left
+:toclevels: 4
+:sectnumlevels: 4
+:version-label: V
+:pdf-page-size: A4
+:toc-title: 目录
+:preface-title: 前言
+:chapter-signifier:
+:appendix-caption: 附录
+:listing-caption: 代码
+:figure-caption: 图
+:keywords: 文档
+:description: 文档模板
+:last-update-label: 最后更新时间
+:homepage: https://www.diguage.com

@@ -1,0 +1,19 @@
+= 随笔
+
+. 在 `org.apache.dubbo.rpc.AsyncRpcResult.get(long, java.util.concurrent.TimeUnit)` 方法中，把异步网络调用转换成了同步调用
++
+--
+[{java_src_attr}]
+----
+include::{rpc-api-srcdir}/AsyncRpcResult.java[tag=get]
+----
+--
++
+. 通过定义一个没有线程的 `ThreadlessExecutor`，统一了异步调用与同步调用的底层调度：
++
+--
+[{java_src_attr}]
+----
+include::{common-srcdir}/threadpool/ThreadlessExecutor.java[]
+----
+--

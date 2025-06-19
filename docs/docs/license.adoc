@@ -1,0 +1,7 @@
+[#license]
+[appendix]
+= 版权声明
+
+....
+include::{project_basedir}/LICENSE[]
+....
